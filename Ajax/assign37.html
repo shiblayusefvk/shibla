@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collapse Plugin</title>
+	<meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <script type="text/javascript">
+       	$(document).ready(function(){
+       		$('#toggleButton').click(function(){
+       			$('#imageGallery').collapse('toggle');
+       		});
+        		$('#hideButton').click(function(){
+       			$('#imageGallery').collapse('hide');
+       		});
+        		$('#showButton').click(function(){
+       			$('#imageGallery').collapse('show');
+       		});
+        		
+       		});
+
+       	
+       	
+       </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<button type="button" class="btn btn-primary" data-toggle="collapse" id="toggleButton">Toggle Image Gallery
+						</button>
+						<button type="button" class="btn  btn-primary" data-toggle="collapse" id="hideButton">Hide Image Gallery
+						</button>
+						<button type="button" class="btn btn-primary" data-toggle="collapse" id="showButton">Show Image Gallery</button>
+					</div>
+					<div class="panel-body collapse in" id="imageGallery">
+						<div class="col-xs-4">
+							<a href="/Ajax/flower2.jpg" class="thumbnail" >
+								<p>Flower 1</p>
+								<img src="/Ajax/flower2.jpg"  >
+							</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="/Ajax/flower3.jpg" class="thumbnail">
+								<p>Flower 2</p>
+								<img src="/Ajax/flower3.jpg" >
+							</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="/Ajax/flower3.jpg" class="thumbnail">
+								<p>Flower 3</p>
+								<img src="/Ajax/flower3.jpg" >
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

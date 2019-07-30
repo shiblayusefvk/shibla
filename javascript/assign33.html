@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CheckBox Validation</title>
+	<script type="text/javascript">
+		function qual(){
+			   var ug=document.getElementById('ug').checked;
+			   var pg=document.getElementById('pg').checked;
+			   if(ug == false && pg == false){
+			   	document.getElementById('label').innerHTML="Please choose your qualification";
+			   	return false;
+			   }
+			   else{
+			   	return true;
+			   }
+		}
+		
+</script>
+</head>
+<body bgcolor="#00ffff">
+<form name="myform" action="" method="" onsubmit="return qual();">
+	<caption><b>CheckBox Validation</caption><br><br>
+	<table>
+
+<tr><td>Qualification:	<input type="checkbox" name="qualification" id="ug"  value="Graduate">Graduate
+    <input type="checkbox" name="qualification" id="pg" value="PostGraduate"></td></tr>Post Graduate
+    <tr><td><label id="label" style="color:red"></label></td></tr>
+    <tr><td><input type="button" value="Submit" onclick=" return qual();"></td></tr>
+</form>
+</body>
+</html>

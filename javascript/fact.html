@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+
+function fact()
+{
+	
+      var num=document.getElementById("number").value;
+      alert(num);
+      
+        var fact=1;
+         
+        
+	    for(var i=num;i>0;i--)
+	{
+         fact=fact*num;
+	
+}
+document.write("factorial of the"+num+" is"+fact);
+
+}
+
+
+</script>
+</head>
+<body>
+enter a value<input type="text" id="number">
+<input type="button" value="ok" onclick="fact()">
+</body>
+</html>

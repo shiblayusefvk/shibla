@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function mul(){
+	
+	var num=document.getElementById("name").value;
+	document.write("the number you entered is"+num+"<br>");
+	for(i=1;i<=10;i++)
+{
+		document.write(i+" * "+num+"="+num*i+"<br>");
+
+	}
+
+}
+</script>
+</head>
+<body>
+<form name="frm1">
+enter a number<input type="text" name="number" id="name">
+<input type="button" value="print" OnClick="mul()">
+</form>
+</body>
+</html>

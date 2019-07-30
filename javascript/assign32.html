@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio Button Validation2</title>
+	<script type="text/javascript">
+		
+		function check(){
+			  var Fem=document.getElementById('fem').checked;
+			  var Mal=document.getElementById('mal').checked;
+			  if(Fem == false &&  Mal == false){
+			  document.getElementById('lablel1').innerHTML="please choose your gender";
+
+                  
+                   return false;
+			  }
+			  else{
+			  	return true;
+			  }
+
+		}
+
+	</script>
+</head>
+<body bgcolor="#ooffff">
+	<form id="form1" onsubmit="return check();">
+		<table>
+     <tr><td>     Gender: &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Gender" id="fem" value="Female">Female</td>
+     <td><input type="radio" name="Gender" id="mal" value="Male">Male</td></tr>
+    <tr>  <td> <input type="Button" value="Submit" onclick="check();"></td></tr>
+       <tr><td><label id="lablel1" style="color:red;"></label></td>
+       </tr>
+   </table>
+
+</body>
+</html>

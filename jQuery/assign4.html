@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Enter and Mouse Leave</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+           $('#p1').mouseenter(function(){
+           	alert("mouse entered the paragraph");
+
+           $('#p1').mouseleave(function(){
+            alert("mouse leave the paragraph");
+
+         	});
+
+         });
+       });
+</script>
+</head>
+<body>
+<p id="p1">Welcome to jQuery World...!!</p>
+</body>
+</html>

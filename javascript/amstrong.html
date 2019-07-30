@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function amst()
+{
+	 var n=document.getElementById("name").value;
+	 
+	 d=n;
+	  s=0;
+	 var rem=0;
+	 while(d!=0)
+	 {
+	 	rem=d % 10;
+	 	s=s+(rem*rem*rem);
+	 	d=parseInt(d/10);
+	 
+	 }
+	 if(s==n)
+	 {
+	 	document.write(n+" is an amstrong");
+	 }
+	 else
+	 {
+	 	document.write(n+"is not  an amstrong");
+	 }
+}
+</script>
+</head>
+<body>
+<form>
+Enter a number<input type="text" name="amstr" id="name">
+
+<input type="button" value="ok" OnClick="amst()">
+</form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alert</title>
+	<meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <script type="text/javascript">
+       	$(document).ready(function(){
+          $('#btnsubmit').click(function(){
+          	$('#myAlert').show('fade');
+          });
+          $('#btnsubmit').click(function(){
+          	$('#alertinfo').show('fade');
+          });
+           $('#btnsubmit').click(function(){
+          	$('#alertwarning').show('fade');
+          });
+            $('#btnsubmit').click(function(){
+          	$('#alertsuccess').show('fade');
+          });
+
+       	});
+       </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<br><br>
+				<button id="btnsubmit" class="btn btn-primary">Submit</button>
+				<br><br>
+				<a href="#" class="close" data-dismiss="alert">&times;</a>
+				<div class="alert alert-danger collapse" id="myAlert">
+					<strong>Error!</strong>there is a problem in submitting your form
+				</div><br>
+				<div class="alert alert-info collapse" id="alertinfo">
+					<strong>Error!</strong>there is a problem in submitting your form
+				</div><br>
+				<div class="alert alert-warning collapse" id="alertwarning">
+					<strong>Error!</strong>there is a problem in submitting your form
+				</div><br>
+				<div class="alert alert-success collapse" id="alertsuccess">
+					<strong>Error!</strong>there is a problem in submitting your form
+				</div><br>
+				
+			 </div>
+		</div>
+	</div>
+
+</body>
+</html>

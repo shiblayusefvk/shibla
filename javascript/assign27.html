@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<script type="text/javascript">
+         function nam(){
+
+            var n=document.getElementById('first');
+
+            var l=document.getElementById('Last');
+             var p=document.getElementById('password');
+              var e=document.getElementById('Email');
+              var wel=document.getElementById('welcome');
+               wel.innerHTML="welcome "+n.value+l.value+e.value;
+         }
+		
+         
+
+	</script>
+</head>
+<body>
+<form>
+First Name<input type="text" name="txt1" id="first"><br><br>
+Last Name<input type="text" name="txt2" id="Last"><br><br>	
+Email<input type="text" name="txt3" id="Email"><br><br>
+password<input type="password" name="txt1" id="password"><br><br>
+<input type="button" value="submit" onclick="nam();">
+</form>
+<p id="welcome"></p>
+
+
+
+</body>
+</html>

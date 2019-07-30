@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Source</title>
+	<script type="text/javascript">
+            var image_tracker='f';
+		function change(){
+
+			var image=document.getElementById('social');
+			image.src='rose.jpg';
+		
+		
+          if(image_tracker=='f'){
+         	image.src='rose.jpg';
+         	  image_tracker='r';
+         }
+         else
+         {
+         	image.src='flower2.jpg';
+         	image_tracker='f';
+         }
+
+          }
+
+
+
+	</script>
+</head>
+<body>
+     <img src="flower2.jpg" alt="social_logo" id="social" onclick="change();">
+</body>
+</html>

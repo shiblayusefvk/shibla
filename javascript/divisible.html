@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function check()
+{
+var sum=0;
+for(var i=0;i<=100;i++)
+{
+	if(i % 7==0 && i % 9==0)
+	{
+
+		sum+=i;
+	}
+}
+    
+	document.write(sum);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="check" OnClick="check()">
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form submission</title>
+	<script type="text/javascript">
+		function sub(){
+			var user=document.getElementById('user').value;
+			var pass=document.getElementById('pass').value;
+
+			var uname='admin';
+			var pss='admin123';
+			    if(user==uname)
+			    {
+			    	if (pass==pss) { 
+                         
+                         document.getElementById("frm").innerHTML="LOGIN SUCESSFUL";
+			    	}
+			    
+			    
+                      
+			    }
+
+		}
+	</script>
+</head>
+<body>
+     <form action="another.html" method="post" id="frm">
+     	Username:<input type="text" name="txt1" id="user">
+     	Password:<input type="password" name=txt2" id="pass">
+     	<input type="button"  value="LOGIN" onclick="sub();" >
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Carousel</title>
+	<meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <script type="text/javascript">
+       	$(document).ready(function(){
+       		$('#imageCarousel').carousel();
+       	});
+       </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset">
+				<div id="imageCarousel" class="carousel slide" data-interval="2000" data-wrap="true" data-pause="false">
+                 <ol class="carousel-indicators">
+                 	<li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                 	<li data-target="#imageCarousel" data-slide-to="1" ></li>
+                 	<li data-target="#imageCarousel" data-slide-to="2" ></li>
+                 	
+                 </ol>
+					
+				</div>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="/Ajax/desert.jpeg" class="img-responsive">
+							<h3>Desert View</h3>
+							<p>The picture  of Desert</p>
+						</div>
+
+					
+						<div class="item">
+						<img src="/Ajax/mountain.jpeg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3>Mountains</h3>
+							<p>The picture of Mountains</p>
+						</div>
+					
+					
+						<div class="item">
+						<img src="/Ajax/sea.jpg" class="img-responsive">
+						<div class="carousel-caption">
+							<h3>Sea</h3>
+							<p>The picture of Sea</p>
+						</div>
+						
+                    
+					
+					
+				</div>
+				<a href="#imageCarousel" class="carousel-control-left" data-slide="prev">
+					<span class="glyphicon glyphicon-chveron-left"></span>
+				</a>
+				<a href="#imageCarousel" class="carousel-control-right" data-slide="next">
+					<span class="glyphicon glyphicon-chveron-right"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

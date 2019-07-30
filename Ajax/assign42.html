@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabs</title>
+	<meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#homeTab" data-toggle="tab">Home</a>
+					</li>
+					<li>
+						<a href="#contactTab" data-toggle="tab">Contact</a>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown">
+							Location<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+                          <li>
+                          	<a href="#indiaTab" data-toggle="tab">India</a>
+                          </li>
+                          <li>
+                          	<a href="#usaTab" data-toggle="tab">USA</a>
+                          </li>
+                      </ul>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div id="homeTab" class="tab-pane active">
+						<h3>Home Page</h3>
+						<p>Home Page Content</p>
+					</div>
+					<div id="contactTab" class="tab-pane">
+						<h3>Contact Page</h3>
+						<p>Contact Page Content</p>
+					</div>
+					<div id="indiaTab" class="tab-pane">
+						<h3>India Page</h3>
+						<p>India Page Content</p>
+					</div>
+					<div id="usaTab" class="tab-pane">
+						<h3>USA Page</h3>
+						<p>USA Page Content</p>
+					</div>
+
+				</div> 
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

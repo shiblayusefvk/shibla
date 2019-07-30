@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function validate()
+{
+	flag=0;
+	cname=document.myform.txt_name.value;
+	if(cname == ""){
+       document.getElementById("label1").innerHTML="please enter the name";
+       document.myform.txt_name.style.borderColor="red";
+	   
+	   flag++;	
+	}
+	else
+	{
+		document.getElementById("label1").innerHTML="";
+		document.myform.txt_name.style.borderColor="initial";
+	}
+	passwd=document.myform.txt_password.value;
+	if(passwd == "")
+	{
+	document.getElementById("pass_label").innerHTML="please enter the password";
+		document.myform.txt_password.style.borderColor="red";
+		flag++;
+	
+}
+else if(passwd.length<5){
+	
+	document.getElementById("pass_label").innerHTML="please enter minimuim five characters";
+		document.myform.txt_password.style.borderColor="red";
+		flag++;
+	
+}
+else
+{
+        document.getElementById("pass_label").innerHTML="";
+		document.myform.txt_password.style.borderColor="initial";	
+}
+email=document.myform.txt_email.value;
+var reg=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})/;
+console.log(reg.test(email));
+if(!reg.test(email)){
+	document.getElementById("lab_email").innerHTML="please enter the email";
+		document.myform.txt_email.style.borderColor="red";
+		flag++;
+	
+}
+
+else
+{
+        document.getElementById("lab_email").innerHTML="";
+		document.myform.txt_email.style.borderColor="initial";	
+}
+tele=document.myform.address.value;
+if(tele=="")
+{
+	document.getElementById("lab_tel").innerHTML="Enter the telephone number";
+	document.myform.txt_tel.style.borderColor="red";
+	flag++;
+
+}
+else
+{
+	document.getElementById("lab_tel").innerHTML="";
+		document.myform.txt_tel.style.borderColor="initial";
+}
+hob=document.myform.hob.value;
+if(hob=="")
+{
+	
+}
+
+
+if(flag>0)
+{
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return validate();">
+<center>
+<table border="0" >
+<caption align="center"><b>Customer Registration</b></caption>
+<tr><td>Customer Name:</td><td> <input type="text" id="txt_name"></td>
+<td><label  id="label1"></label</td></tr>
+<tr><td>Password:</td><td><input type="password" id="txt_password"></td>
+<td><label id="pass_label"></label></td></tr>
+<tr><td>Email:</td><td><input type="text" id="txt_email"></td>
+<td><label id="lab_email"></label>
+
+<tr><td>Gender:</td><td><input type="radio" value="male" name="r1">male<input type="radio" value="female" name="r1">female</td></tr>
+<tr><td>Address:</td><td><textarea row="15" cols="20" id="address"></textarea></td></tr>
+<tr><td>telephone no:</td><td><input type="text" id="txt_tel"></td>
+<td><label id="lab_tel"></label></td></tr>
+<tr><td>Hobbies:</td><td><select  id="hob">
+<td><label id="lab_hobb"></td>
+<option></option>
+<option value="reading">reading</option>
+<option value="listening to music">listening to music</option>
+<option value="singing">singing</option>
+</select></td></tr>
+<tr><td><input type="button" value="submit" onclick="return validate()"></td></tr>
+</center>
+</table>
+</form>
+</body>
+</html> 

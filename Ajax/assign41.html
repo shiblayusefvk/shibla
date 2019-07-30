@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events and Methods</title>
+	<meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <script type="text/javascript">
+       	$(document).ready(function(){
+          $('#BtnShowModal').click(function(){
+          	  $('#LoginModal').modal('show');
+
+          });
+          $('#BtnHideModal').click(function(){
+          	  $('#LoginModal').modal('hide');
+
+          });
+       	});
+       </script>
+
+</head>
+<body>
+	<body>
+	<div class="container">
+		<div class="row">
+               <div class="col-xs-12">
+               	<button class="btn btn-primary" id="BtnShowModal">Login</button>
+               	<div class="modal" id="LoginModal" tabindex="-1">
+               		<div class="modal-dialog">
+               			<div class="modal-content">
+               				<div class="modal-header">
+               					<button class="close" data-dismiss="modal">&times;</button>
+               					<h3 class="modal-title">Login</h3>
+               				</div>
+               				<form>
+               					<div class="modal-body">
+               						<form>
+               							<div class="form-group">
+               								<label for="inputUsername">User Name</label>
+               								<input type="text" name="txt" class="form-control">
+               							</div>
+               							<div class="form-group">
+               								<label for="inputPassword">Password</label>
+               								<input type="text" name="txt" class="form-control">
+               							</div>
+               						</form>
+               					</div>
+               				               <div class="modal-footer">
+               				               	<button type="btn btn-primary">Login</button>
+               				               	<button type="btn  btn-primary" id="BtnHideModal">Close</button>
+               				               </div>
+               			</div>
+               		</div>
+               	</div>
+               	
+
+
+
+
+
+
+               </div>
+
+
+
+
+
+		 </div>
+	</div>
+
+</body>
+</html>

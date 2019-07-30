@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+var fib1=0;
+var fib2=1;
+var limit=0;
+
+
+function fibb()
+{
+limit=document.getElementById("limit").value;
+
+document.write("fibonacci series is<br>")
+document.write(fib1+"<br>");
+document.write(fib2+"<br>");
+var count=2;
+
+while(count<limit)
+{
+ var fib3=fib1+fib2;
+  document.write(fib3+"<br>");
+ count++;
+ fib1=fib2;
+ fib2=fib3;
+}
+}
+</script>
+</head>
+<body>
+<form>
+enter the no:<input type="text" id="limit">
+<input type="button" value="ok" onclick="fibb()">
+</form>
+</body>
+</html>

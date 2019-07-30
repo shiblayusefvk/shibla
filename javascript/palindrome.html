@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+var  length=0;
+var text=prompt("enter a string");
+var l=text.length;
+alert(l);
+flag=0;
+for(var i=0;i<l/2;i++)
+{
+	if(text.charAt(i)!=text.charAt(l-i-1))
+	{
+		flag=1;
+		break;
+	}
+}
+if(flag==1)
+{
+	document.write("its not a palindrome");
+}
+else
+{
+	document.write("its  a palindrome");
+}
+</script>
+</head>
+<body>
+</form>
+</body>
+</html>

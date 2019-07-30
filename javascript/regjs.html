@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+<script language="JavaScript">
+function validate()
+{
+if(document.myform.name.value=="")	
+{
+	alert("Please provide your name!");
+	document.myform.name.focus();
+	return false;
+}
+
+if(document.myform.password.value=="")	
+{
+	alert("Please provide your password!");
+	document.myform.password.focus();
+	return false;
+}
+if(document.myform.email.value=="")	
+{
+	alert("Please provide your email!");
+	document.myform.email.focus();
+	return false;
+}
+
+if(document.myform.r1.value=="")	
+{
+	alert("Please provide your gender!");
+	document.myform.r1.focus();
+	return false;
+}
+if(document.myform.address.value=="")	
+{
+	alert("Please provide your address!");
+	document.myform.address.focus();
+	return false;
+}
+if(document.myform.tel.value=="")	
+{
+	alert("Please provide your telephone no!");
+	document.myform.tel.focus();
+	return false;
+}
+if(document.myform.hob.value=="")	
+{
+	alert("Please select your hobbies!");
+	document.myform.hob.focus();
+	return false;
+}
+
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return(validate());">
+<center>
+<table border="0">
+<caption><b>Customer Registration</b></caption>
+<tr><td>Customer Name:</td><td> <input type="text" id="name"></td></tr>
+<tr><td>Password:</td><td><input type="password" id="password"></td</tr>
+<tr><td>Email:</td><td><input type="text" id="email">
+<tr><td>Gender:</td><td><input type="radio" value="male" name="r1">male<input type="radio" value="female" name="r1">female</td></tr>
+<tr><td>Address:</td><td><textarea row="15" cols="20" name="address"></textarea></td></tr>
+<tr><td>telephone no:</td><td><input type="text" id="tel"></td></tr>
+<tr><td>Hobbies:</td><td><select  name="hob">
+<option></option>
+<option value="reading">reading</option>
+<option value="listening to music">listening to music</option>
+<option value="singing">singing</option>
+</select></td></tr>
+<tr><td><input type="submit" value="submit"></td></tr>
+</center>
+</table>
+</form>
+</body>
+</html>

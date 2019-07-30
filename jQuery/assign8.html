@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery using css</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+         
+          $('#p1').css('background-color','red');
+          $('#p2').css('background-color','green');
+          $('#p3').css('background-color','blue');
+          $('#p4').css('background-color','white');
+
+           $("#button").click(function(){
+           	$('p').css({'background-color':'yellow','font-size':'25px'});
+         });
+
+		});
+
+	</script>
+</head>
+<body>
+   <div>  <h4>This is a Heading</h4></div>
+   <div><p id="p1" style="background-color: yellow">This is  a paragraph</p></div>
+   <div><p id="p2" style="background-color: yellow">This is  a paragraph</p></div>
+   <div><p  id="p3" style="background-color: yellow">This is  a paragraph</p></div>
+   <div><p   id="p4"      style="background-color: yellow">This is  a paragraph</p></div>
+   
+   <div><button  id="button">Set multiple styles for p</button>
+ 
+</body>
+</html>

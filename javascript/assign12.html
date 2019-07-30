@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Variable Scope</title>
+<script type="text/javascript">
+var a="first";
+function appl(){
+	var b="second";
+	
+document.write("<h2> Local</h2><br>");
+
+	document.write("apples inside the function<br>");
+	
+
+	document.write("<h2>Global</h2><br>")
+	document.write("apples inside the function<br>");
+	
+}
+appl();
+document.write("apples outside the function");
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Popover</title>
+	<meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <script type="text/javascript">
+       	$(document).ready(function(){
+       		$('#BtnPopover').popover();
+       	});
+       </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<br><br>
+				<button class="btn btn-primary" title="Popover Title" id="BtnPopover" data-toggle="popover"
+				
+				data-content="Popover Content.Popover Content.Popover Content   <img src='/Ajax/flower2.jpg'>" data-html="true" data-placement="bottom""> 
+				 Popover Example</button>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+var a=document.getElementById("nmb1").value;
+var b=document.getElementById("nmb2").value;
+alert(a);
+var b=prompt("enter second number");
+function swap(){
+
+document.write("before swapping"+a "and" +b "is");
+ a=a+b;
+ b=a-b;
+ a=a-b;
+document.write("after swapping"+a "and" +b "is");
+}
+</script>
+</head>
+
+<body>
+<form>
+first no <input type="text" id="nmb1">
+second no<input type="text" id="nmb2">
+<input type="button" value="click" onclick="swap()">
+</form>
+</body>
+</html>

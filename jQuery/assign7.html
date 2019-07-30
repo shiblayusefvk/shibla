@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Animate</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+
+  $(document).ready(function(){
+    $('#button').click(function(){
+
+   $('.div').animate({
+     left:"+=4px"
+  });
+
+});
+
+});
+
+
+</script>
+</head>
+<body>
+	<div class="div" style="width:100px;height:100px;background-color: blue;position:relative"></div><br><br><br><br>
+		<div align="center"><button id="button" >Click</button></div>
+</body>
+</html>

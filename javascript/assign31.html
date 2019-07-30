@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio Button Validation</title>
+	<script type="text/javascript">
+		function check(){
+           
+             var female=document.getElementById('fem').checked;
+             var male=document.getElementById('mal').checked;
+
+		
+            }
+
+	</script>
+</head>
+<body bgcolor="#00ffff">
+	<form name="form1" onsubmit="return check();">
+     Gender: &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Gender" value="Female" id="fem">Female
+          <input type="radio" name="Gender" value="male" id="mal">Male
+          <input type="button" value="Submit" onclick="check();">
+      </form>
+</body>
+</html>
